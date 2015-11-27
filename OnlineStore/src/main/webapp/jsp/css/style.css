@@ -1,0 +1,28 @@
+body {
+	overflow: auto;
+}
+
+.main_block {
+	border: 1pt solid black;
+	width: 1900px;
+	margin: auto;
+}
+
+.header {
+	border-radius: 5px;
+	text-align: center;
+	background: linear-gradient(to top, #5CD6FF, #D6F5FF);
+	height: 100pt;
+}
+
+.footer {
+	border-radius: 5px;
+	text-align: center;
+	background: linear-gradient(to right, #363636, #9C9C9C);
+	height: 50pt;
+}
+
+#lol{
+	height:1000px;
+	border: 1pt solid black;
+}
