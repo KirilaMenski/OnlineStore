@@ -8,5 +8,6 @@
 </head>
 <body>
 <h1>Hello, Online Store !</h1>
+<a href="jsp/main.jsp">Click</a>
 </body>
 </html>
