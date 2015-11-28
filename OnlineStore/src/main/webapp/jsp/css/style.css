@@ -1,28 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	overflow: auto;
 }
 
+/*Main block for all pages*/
 .main_block {
-	border: 1pt solid black;
 	width: 1900px;
 	margin: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+	font-size: 18pt;
 }
 
+/*Header TODO*/
 .header {
+	margin-bottom: 10px;
 	border-radius: 5px;
 	text-align: center;
 	background: linear-gradient(to top, #5CD6FF, #D6F5FF);
+	width: 1900px;
 	height: 100pt;
 }
 
+/*Footer TODO*/
 .footer {
+	margin-top: 10px;
 	border-radius: 5px;
 	text-align: center;
 	background: linear-gradient(to right, #363636, #9C9C9C);
 	height: 50pt;
+	border-radius: 5px;
 }
 
-#lol{
-	height:1000px;
+/*Login block. Log in and log out*/
+#login {
+	width: 1900px;
+	height: 25px;
+}
+
+.login_block {
+	width: 200px;
+	height: 25px;
+	float: right;
+}
+
+.login_block ul {
+	list-style: none;
+}
+
+.login_block ul li {
+	padding-left: 20px;
+	float: left;
+}
+
+.login_block ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.login_block ul li a:hover {
+	color: red;
+}
+
+/*Search block on site*/
+#search {
+	padding: 10px;
+}
+
+#search input {
+	width: 800px;
+	height: 30px;
+}
+
+/*Menu*/
+#menu_block {
+	z-index: 1;
+	display: inline-block;
 	border: 1pt solid black;
+	width: 1900px;
+	height: 50px;
+	background: black;
+	border-radius: 5px;
+	color: white;
+	background: black;
+}
+
+#menu_block ul {
+	margin: 7px;
+	padding: 0;
+	list-style: none;
+}
+
+#menu_block ul li {
+	float: left;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+#menu_block ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+#menu_block ul li a:hover {
+	color: red;
+}
+
+#menu_block ul li li {
+	display: none;
+	margin: 0px;
+	padding: 10px;
+	background: black;
+	text-decoration: none;
+	text-align: center;
+	z-index: 10;
+	background: black;
+}
+
+#menu_block ul li li:hover {
+	background: #0D1112;
+}
+
+/*REMOVE!!!!!!!!!!!!!!!!!*/
+#lol {
+	height: 1000px;
+}
+
+/*Window on products with two div products_list and search_criteria*/
+.window {
+	margin-top: 5px; width : 1900px;
+	height: 1000px;
+	width: 1900px;
+}
+
+/*PRODUCTS LIST*/
+#products_list {
+	max-width: 1400px;
+	height: 1000px;
+	border-right: 0.5pt solid gray;
+	float: left;
+}
+
+.product {
+	width: 1350px;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+.product table tr {
+	height: 50px;
+}
+
+/*SEARCH CRITERIA*/
+#search_criteria {
+	word-wrap: break-word;
+	max-width: 500px;
+	height: 1000px;
+	float: right;
 }
