@@ -73,11 +73,12 @@ body {
 #search input {
 	width: 800px;
 	height: 30px;
+	font-size: 18pt;
 }
 
 /*Menu*/
 #menu_block {
-	z-index: 1;
+	
 	display: inline-block;
 	border: 1pt solid black;
 	width: 1900px;
@@ -86,6 +87,7 @@ body {
 	border-radius: 5px;
 	color: white;
 	background: black;
+	z-index: 1000;
 }
 
 #menu_block ul {
@@ -119,8 +121,9 @@ body {
 	background: black;
 	text-decoration: none;
 	text-align: center;
-	z-index: 10;
+	
 	background: black;
+	z-index: 1000;
 }
 
 #menu_block ul li li:hover {
@@ -134,33 +137,102 @@ body {
 
 /*Window on products with two div products_list and search_criteria*/
 .window {
-	margin-top: 5px; width : 1900px;
-	height: 1000px;
+	margin-top: 5px;
 	width: 1900px;
+	min-height: 1000px;
 }
 
 /*PRODUCTS LIST*/
 #products_list {
-	max-width: 1400px;
+	max-width: 1600px;
 	height: 1000px;
+	border-top: 0.5pt solid gray;
 	border-right: 0.5pt solid gray;
 	float: left;
 }
 
 .product {
-	width: 1350px;
+	width: 1500px;
 	margin-top: 25px;
-	margin-left: 20px;
+	margin-left: 40px;
+}
+
+.product table img {
+	width: 300px;
+	height: 250px;
 }
 
 .product table tr {
 	height: 50px;
 }
 
+.product table tr td a {
+	text-decoration: none;
+	color: black;
+}
+
+.product table tr td a:hover {
+	color: red;
+}
+
 /*SEARCH CRITERIA*/
 #search_criteria {
 	word-wrap: break-word;
-	max-width: 500px;
+	border-top: 0.5pt solid gray;
+	width: 350px;
 	height: 1000px;
-	float: right;
+	float: left;
+}
+
+#manufacturer_list {
+	width: 200px;
+	margin: 25px;
+}
+
+#price {
+	margin: 25px;
+}
+
+.price {
+	width: 125px;
+	height: 30px;
+	font-size: 18pt;
+}
+
+#year {
+	margin: 25px;
+}
+
+.year {
+	width: 125px;
+	height: 30px;
+	font-size: 18pt;
+}
+
+/*Style for image*/
+.thumbs img {
+	border: solid 1px #ccc;
+	width: 200px;
+	height: 150px;
+	padding: 4px;
+}
+
+#largeImg{
+	width: 700px;
+	height: 500px;
+}
+
+.thumbs img:hover {
+	border-color: #FF9900;
+}
+
+#a{
+	float: left;border: 1pt solid black;
+}
+
+#b{
+	width: 500px;
+	height: 500px;
+	border: 1pt solid black;
+	float: left;
 }
