@@ -12,8 +12,8 @@
 	<div class="menu">
 		<div id="menu_block">
 			<ul>
-				<li><a href="#">Main</a></li>
-				<li id="123"><a href="#">Products list</a>
+				<li><a href="main.jsp">Main</a></li>
+				<li id="123"><a href="products.jsp">Products list</a>
 					<ul>
 						<li><a href="#">Laptops</a></li>
 						<li><a href="#">Computer</a></li>
@@ -21,7 +21,7 @@
 						<li><a href="#">Accessories</a></li>
 						<li><a href="#">Smth else</a></li>
 					</ul></li>
-				<li><a href="#">Profile</a></li>
+				<li><a href="profile.jsp">Profile</a></li>
 			</ul>
 		</div>
 	</div>
