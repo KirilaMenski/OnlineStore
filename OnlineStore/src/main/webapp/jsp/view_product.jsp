@@ -1,8 +1,8 @@
 <%@ include file="head.jsp"%>
 <body>
-	<div class="main_block"><%@ include file="service_jsp/header.jsp"%>
+	<div id="main_block"><%@ include file="service_jsp/header.jsp"%>
 		<%@ include file="service_jsp/menu.jsp"%>
-		<div class="window">
+		<div id="window">
 		<div id="a">
 			<p><img id="largeImg" src="resources/products_image/product1/acer1.jpg" alt="Large image" /></p>
 

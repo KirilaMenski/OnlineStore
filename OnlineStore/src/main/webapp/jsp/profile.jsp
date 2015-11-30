@@ -1,8 +1,8 @@
 <%@ include file="head.jsp"%>
 <body>
-	<div class="main_block"><%@ include file="service_jsp/header.jsp"%>
+	<div id="main_block"><%@ include file="service_jsp/header.jsp"%>
 		<%@ include file="service_jsp/menu.jsp"%>
-		<div id="lol">profile</div>
+		<div id="window">profile</div>
 		<%@ include file="service_jsp/footer.jsp"%>
 	</div>
 </body>
