@@ -9,14 +9,11 @@ body {
 
 /*Main block for all pages*/
 #main_block {
-	position: absolute;
-	top: 0%;
-	left: 45%;
-    margin-left:-500px;
-	max-width: 100%;
+	width: 1259px;
 	min-height: 1000px;
+	margin: auto;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-	font-size: 18pt;
+	font-size: 14pt;
 }
 
 /*Header TODO*/
@@ -40,7 +37,7 @@ body {
 
 /*Login block. Log in and log out*/
 #login {
-	width: 1200px;
+	width: 1239px;
 	height: 25px;
 }
 
@@ -76,7 +73,7 @@ body {
 #search input {
 	width: 800px;
 	height: 30px;
-	font-size: 18pt;
+	font-size: 16pt;
 }
 
 /*Menu*/
@@ -84,7 +81,7 @@ body {
 	
 	display: inline-block;
 	border: 1pt solid black;
-	width: 100%;
+	width: 1259px;
 	height: 50px;
 	background: black;
 	border-radius: 5px;
@@ -135,7 +132,6 @@ body {
 
 /*Window on all pages*/
 #window {
-	
 	margin-top: 5px;
 	min-height: 1000px;
 }
@@ -151,7 +147,7 @@ body {
 #product {
 	width: 800px;
 	margin-top: 25px;
-	margin-left: 40px;
+	margin-left: 25px;
 }
 
 #product table img {
@@ -176,7 +172,7 @@ body {
 #search_criteria {
 	word-wrap: break-word;
 	border-top: 1pt solid gray;
-	width: 350px;
+	width: 430px;
 	float: left;
 }
 
@@ -192,7 +188,7 @@ body {
 .price {
 	width: 125px;
 	height: 30px;
-	font-size: 18pt;
+	font-size: 14pt;
 }
 
 #year {
@@ -202,7 +198,7 @@ body {
 .year {
 	width: 125px;
 	height: 30px;
-	font-size: 18pt;
+	font-size: 14pt;
 }
 
 /*Style for image*/
@@ -222,13 +218,6 @@ body {
 	border-color: #FF9900;
 }
 
-#a{
+#product_image{
 	float: left;border: 1pt solid black;
-}
-
-#b{
-	width: 500px;
-	height: 500px;
-	border: 1pt solid black;
-	float: left;
 }

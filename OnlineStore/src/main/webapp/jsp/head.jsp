@@ -5,9 +5,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="jsp/css/style.css">
 <script type='text/javascript'
-	src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-<script type="text/javascript" src="js/animation.js"></script>
+	src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="text/javascript" src="jsp/js/animation.js"></script>
 <title>Online Store</title>
 </head>
