@@ -9,8 +9,8 @@
 				<div id="product">
 					<table border="1">
 						<tr>
-							<td rowspan="4" width="200"><img src="resources/products_image/product1/acer1.jpg" alt="Large image" /></td>
-							<td width="200"><b><a href="view_product.jsp">Acer Aspire 5750G</a></b></td>
+							<td rowspan="4" width="200"><img src="jsp/resources/products_image/product1/acer1.jpg" alt="Large image" /></td>
+							<td ><b><a href="view_product">Acer Aspire 5750G</a></b></td>
 						</tr>
 						<tr>
 							<td>2011</td>
@@ -19,7 +19,7 @@
 							<td>Acer</td>
 						</tr>
 						<tr>
-							<td width="550">intel-core i3, 500GB HDD, 4GB RAM, NVIDIA@ GEFORCE 610M</td>
+							<td>intel-core i3, 500GB HDD, 4GB RAM, NVIDIA@ GEFORCE 610M</td>
 						</tr>
 					</table>
 				</div>
