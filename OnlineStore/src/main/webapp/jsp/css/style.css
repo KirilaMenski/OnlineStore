@@ -65,6 +65,61 @@ body {
 	color: red;
 }
 
+/*Div over other div with login*/
+#enter {
+	display: none;
+	position: absolute;
+	border-radius: 15px;
+	background: #E0E0E0;
+	z-index: 100;
+	height: 150px;
+	margin-left: 1000px;
+	padding: 10px;
+}
+
+#enter input {
+	width: 200px;
+	height: 30px;
+	border-radius: 15px;
+	font-size: 16pt;
+	text-align: center;
+}
+
+/*Registration block*/
+#registration_block {
+	display: none;
+	position:absolute;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 1);
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	min-height: 225%;
+}
+
+#registration {
+	background: white;
+	margin: 5% auto;
+	padding: 10px;
+	width: 400px;
+	height: 500px;
+	border-radius: 15px;
+}
+
+#registrate{
+	font-family: Monotype Corsiva;
+	text-decoration: none;
+	color: black;
+}
+
+#close_reg img{
+	text-decoration: none;
+	color: black;
+	margin-left: 370px; 
+	width: 25px;
+	height: 25px;
+}
+
 /*Search block on site*/
 #search {
 	padding: 10px;
@@ -78,7 +133,6 @@ body {
 
 /*Menu*/
 #menu_block {
-	
 	display: inline-block;
 	border: 1pt solid black;
 	width: 1259px;
@@ -121,9 +175,8 @@ body {
 	background: black;
 	text-decoration: none;
 	text-align: center;
-	
 	background: black;
-	z-index: 1000;
+	z-index: 10;
 }
 
 #menu_block ul li li:hover {
@@ -209,7 +262,7 @@ body {
 	padding: 4px;
 }
 
-#largeImg{
+#largeImg {
 	width: 450px;
 	height: 300px;
 }
@@ -218,6 +271,7 @@ body {
 	border-color: #FF9900;
 }
 
-#product_image{
-	float: left;border: 1pt solid black;
+#product_image {
+	float: left;
+	border: 1pt solid black;
 }
