@@ -9,9 +9,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 
+import by.ansgar.store.auth.Authorization;
 import by.ansgar.store.entity.User;
 import by.ansgar.store.service.UserService;
 import by.ansgar.store.service.impl.UserServiceImpl;
@@ -46,11 +48,17 @@ public class RegistrationController extends HttpServlet {
 
 			userService.addUser(user);
 			LOG.info("User " + nickName + " registrate succsesffuly");
-
-			request.setAttribute("nick_name", nickName);
-			RequestDispatcher dispathcer = request
-					.getRequestDispatcher("jsp/main.jsp");
-			dispathcer.forward(request, response);
+			
+//			HttpSession session = request.getSession();
+//			session.setAttribute("nickName", nickName);
+//			String sessionValue = (String)session.getAttribute("nickName");
+//
+//			request.setAttribute("nick_name", sessionValue);
+//			
+//			RequestDispatcher dispathcer = request
+//					.getRequestDispatcher("jsp/main.jsp");
+//			dispathcer.forward(request, response);
+			Authorization.doLogIn(request, response, "jsp/main.jsp", nickName);
 			
 
 		} catch (SQLException e) {
