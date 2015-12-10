@@ -40,21 +40,22 @@ public class Controller extends HttpServlet {
 
 	public void init(ServletConfig config) throws ServletException {
 		super.init(config);
-		ServletContext context = config.getServletContext();
-		String log4jConfigFile = context
-				.getInitParameter("log4j-config-location");
-		String fullPath = context.getRealPath("") + File.separator
-				+ log4jConfigFile;
-
-		PropertyConfigurator.configure(fullPath);
-
-		System.out.println(config.getServletContext());
+//		ServletContext context = config.getServletContext();
+//		String log4jConfigFile = context
+//				.getInitParameter("log4j-config-location");
+//		String fullPath = context.getRealPath("") + File.separator
+//				+ log4jConfigFile;
+//
+//		PropertyConfigurator.configure(fullPath);
+//		
+//		System.out.println(fullPath);
 
 	}
 
 	public void processComand(HttpServletRequest request,
 			HttpServletResponse response) throws IOException, ServletException {
-
+//		LOG.info("The project sturtup");
+		
 		Command command = CommandFactory.defineCommand(request);
 		String page = command.execute(request);
 		response.setHeader("Cache-Control",
