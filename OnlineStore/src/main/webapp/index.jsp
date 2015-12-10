@@ -1,4 +1,4 @@
 
 <%
-	response.sendRedirect("main");
+	response.sendRedirect("controller?command=main");
 %>
