@@ -30,8 +30,8 @@
 	<div class="menu">
 		<div id="menu_block">
 			<ul>
-				<li><a href="main">Main</a></li>
-				<li id="123"><a href="products">Products list</a>
+				<li><a href="controller?command=main">Main</a></li>
+				<li id="123"><a href="controller?command=products">Products list</a>
 					<ul>
 						<li><a href="#">Laptops</a></li>
 						<li><a href="#">Computer</a></li>
@@ -39,7 +39,7 @@
 						<li><a href="#">Accessories</a></li>
 						<li><a href="#">Smth else</a></li>
 					</ul></li>
-				<li><a href="profile.jsp">Profile</a></li>
+				<li><a href="controller?command=profile">Profile</a></li>
 			</ul>
 		</div>
 	</div>
