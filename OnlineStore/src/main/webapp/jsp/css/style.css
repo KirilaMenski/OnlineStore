@@ -198,7 +198,7 @@ body {
 }
 
 #product {
-	width: 800px;
+	width: 1000px;
 	margin-top: 25px;
 	margin-left: 25px;
 }
@@ -225,17 +225,17 @@ body {
 #search_criteria {
 	word-wrap: break-word;
 	border-top: 1pt solid gray;
-	width: 430px;
+	width: 230px;
 	float: left;
 }
 
 #manufacturer_list {
 	width: 200px;
-	margin: 25px;
+	margin: 5px;
 }
 
 #price {
-	margin: 25px;
+	margin: 5px;
 }
 
 .price {
@@ -245,7 +245,7 @@ body {
 }
 
 #year {
-	margin: 25px;
+	margin: 5px;
 }
 
 .year {
