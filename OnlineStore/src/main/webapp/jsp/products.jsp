@@ -10,7 +10,7 @@
 					<table border="1">
 						<tr>
 							<td rowspan="4" width="200"><img src="jsp/resources/products_image/product1/acer1.jpg" alt="Large image" /></td>
-							<td ><b><a href="view_product">Acer Aspire 5750G</a></b></td>
+							<td width="700"><b><a href="controller?command=view_product">Acer Aspire 5750G</a></b></td>
 						</tr>
 						<tr>
 							<td>2011</td>
