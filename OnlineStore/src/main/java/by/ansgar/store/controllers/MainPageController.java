@@ -28,6 +28,7 @@ public class MainPageController extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("jsp/main.jsp");
 		dispatcher.forward(request, response);
 		LOG.info("Redirect to main.jsp");
+		System.out.println(request.getParameter("COMMAND"));
 	}
 
 	public void doPost(HttpServletRequest request,
