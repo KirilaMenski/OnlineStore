@@ -1,4 +1,5 @@
 	<div id="login">
+	Hello, ${nick_name}!!
 		<div class="login_block">
 			<ul>
 				<li><a id="log_in" href="#">Log in</a></li>
@@ -16,7 +17,7 @@
 	</div>
 	<div id="registration_block"><div id="registration">
 		<a id="close_reg" href="#"><img src="jsp/resources/res_image/close.PNG" alt="close"/></a>
-		<form action="registration" method="post">
+		<form action="controller?command=registration" method="post">
 			<p><input type="text" name="nick_name" placeholder="nick name"></p>
 			<p><input type="text" name="email" placeholder="email"></p>
 			<p><input type="password" name="password" placeholder="password"></p>
