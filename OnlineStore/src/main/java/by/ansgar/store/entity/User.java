@@ -12,7 +12,7 @@ public class User {
 		
 	}
 	
-	public User(int user_id, String nickName, String password, String email, String role){
+	public User(long user_id, String nickName, String password, String email, String role){
 		this.user_id = user_id;
 		this.nickName = nickName;
 		this.password = password;
