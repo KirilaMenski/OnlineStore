@@ -8,9 +8,9 @@
 		</div>
 	</div>
 	<div id="enter">
-		<form action="">
-			<p><input type="text" placeholder="nick name" pattern="\D"></p>
-			<p><input type="password" placeholder="password"pattern="\w{6,12}"></p>
+		<form action="controller?command=login" method="post">
+			<p><input type="text" placeholder="nick name" name="user_name"></p>
+			<p><input type="password" placeholder="password" name="user_password"></p>
 			<p><a id="registrate" href="#">Registrate</a></p>
 			<p><input type="submit" value="Enter"></p>
 		</form>
