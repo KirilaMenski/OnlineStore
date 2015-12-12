@@ -17,4 +17,6 @@ public interface UserService {
 
 	public List<User> userById(long id) throws SQLException;
 	
+	public List<User> userByName(String userName) throws SQLException;
+	
 }
