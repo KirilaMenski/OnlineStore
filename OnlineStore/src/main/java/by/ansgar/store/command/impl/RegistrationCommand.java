@@ -34,8 +34,6 @@ public class RegistrationCommand implements Command {
 			
 			HttpSession session = request.getSession();
 			session.setAttribute("nick_name", nickName);
-//			String sessionValue = (String) session.getAttribute("nick_name");
-//			request.setAttribute("nick_name", sessionValue);
 		} catch (SQLException e) {
 			LOG.error("The error was occured in registration", e);
 		}
