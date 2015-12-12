@@ -32,4 +32,9 @@ public class UserServiceImpl implements UserService{
 		return null;
 	}
 
+	public List<User> userByName(String userName) throws SQLException {
+		List<User> user = userDAO.userByName(userName);
+		return user;
+	}
+
 }
