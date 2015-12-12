@@ -3,6 +3,9 @@ package by.ansgar.store.dao.impl;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -55,6 +58,41 @@ public class UserDAOImpl implements UserDAO {
 
 	public List<User> userById(long id) throws SQLException {
 		return null;
+	}
+
+	public List<User> userByName(String userName) throws SQLException {
+		List<User> user = new ArrayList<User>();
+		Connection connection = null;
+		Statement statement = null;
+		ResultSet resultSet = null;
+		try {
+			connection = ConnectionPool.getConnection();
+			statement = connection.createStatement();
+			resultSet = statement.executeQuery(
+					"SELECT * FROM user WHERE nick_name ='" + userName + "'");
+			while (resultSet.next()) {
+				long id = resultSet.getLong("user_id");
+				String name = resultSet.getString("nick_name");
+				String password = resultSet.getString("password");
+				String email = resultSet.getString("email");
+				String role = resultSet.getString("role");
+				user.add(new User(id, name, password, email, role));
+			}
+		} catch (SQLException e) {
+			LOG.error("Error was occured in get user by name", e);
+		} finally {
+			if (resultSet != null) {
+				resultSet.close();
+			}
+			if (connection != null) {
+				connection.close();
+			}
+			if (statement != null) {
+				statement.close();
+			}
+		}
+
+		return user;
 	}
 
 }
