@@ -12,6 +12,7 @@ public class MainPageCommand implements Command{
 	
 	public String execute(HttpServletRequest request) {
 		String path= "jsp/main.jsp";
+//		String path = "controller?command=main";
 		
 		return path;
 	}
