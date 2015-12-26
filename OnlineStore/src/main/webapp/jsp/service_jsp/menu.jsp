@@ -1,9 +1,10 @@
+	<%@ include file="taglibs.jsp"%>
 	<div id="login">
-	Hello, ${nick_name}!!
+	Hello, ${nick_name}!! Your role is ${user_role}!
 		<div class="login_block">
 			<ul>
-				<li><a id="log_in" href="#">Log in</a></li>
-				<li><a href="#">Log Out</a></li>
+				<c:if test="${user_role != role}"><li><a id="log_in" href="#">Log in</a></li></c:if>
+				<c:if test="${user_role eq role}"><li><a href="controller?command=logout">Log Out</a></li></c:if>
 			</ul>
 		</div>
 	</div>
@@ -40,7 +41,7 @@
 						<li><a href="#">Accessories</a></li>
 						<li><a href="#">Smth else</a></li>
 					</ul></li>
-				<li><a href="controller?command=profile">Profile</a></li>
+				<c:if test="${user_role eq role}"><li><a href="controller?command=profile">Profile</a></li></c:if>
 			</ul>
 		</div>
 	</div>
