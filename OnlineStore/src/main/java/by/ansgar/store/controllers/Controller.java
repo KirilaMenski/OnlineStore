@@ -59,11 +59,20 @@ public class Controller extends HttpServlet {
 		response.setHeader("Pragma", "no-cache");
 		response.setHeader("Expires", "0");
 		HttpSession session = request.getSession();
-		String sessionValue = (String) session.getAttribute("nick_name");
-		if(sessionValue != null){
-			request.setAttribute("nick_name", sessionValue);
+		String userName = (String) session.getAttribute("nick_name");
+		String userRole = (String) session.getAttribute("user_role");
+		System.out.println(userRole);
+		if(userName != null){
+			request.setAttribute("nick_name", userName);
+			request.setAttribute("user_role", userRole);
+			request.setAttribute("role", "user");
 		}else{
+			session.setAttribute("nick_name", "Guest");
+			session.setAttribute("user_role", "guest");
+			session.setAttribute("role", "guest");
 			request.setAttribute("nick_name", "Guest");
+			request.setAttribute("user_role", "guest");
+			request.setAttribute("role", "guest");
 		}
 		if (page != null) {
 			request.getRequestDispatcher(page).forward(request, response);
